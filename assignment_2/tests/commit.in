@@ -1,0 +1,5 @@
+connect bitbash.xyz 9050
+login  oei-svr moasoiac
+observe
+commit
+quit

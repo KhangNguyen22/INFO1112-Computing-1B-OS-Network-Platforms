@@ -1,0 +1,38 @@
+
+
+./myfind.py test --regex=".in$"
+./myfind.py test /User/khangnguyen/ /User/khangnguyen/USYD /User/khangnguyen/Documents
+./myfind.py test --regex=".in$"
+
+## Multiple (20) directories  as input
+
+./myfind.py test /User/khangnguyen/ /User/khangnguyen/USYD /User/khangnguyen/Documents
+
+## Purely multiple regex expressions
+
+./myfind.py  --regex=".in$"  --regex=".in$"  --regex=".in$"
+
+Output:
+Usage: myfind.py [--regex=pattern | --name=filename] directory [command]
+
+## One regex only
+
+./myfind.py  --regex=".in$"
+
+Output:
+
+Usage: myfind.py [--regex=pattern | --name=filename] directory [command]
+
+## Directory is .
+
+./myfind.py . 
+
+## Out of order shit
+
+./myfind.py /Users/khangnguyen/ --regex=".*Khang" --regex=".*Khang" 
+
+Output:
+
+Usage: myfind.py [--regex=pattern | --name=filename] directory [command]
+
+## Regex needs to search and match folder name and file name
